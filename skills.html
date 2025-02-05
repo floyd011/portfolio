@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .text-section {
+            text-align: justify;
+            margin: 20px;
+        }
+        .bullet-list {
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,13 +30,16 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="text-section">
         <h2>Technical Skills</h2>
-        <ul>
-            <li>Databases: SQL Server, PostgreSQL, MySQL, Oracle, Greenplum</li>
-            <li>Data Engineering: Kafka, Debezium, ETL pipelines</li>
-            <li>Programming: Python, Bash, T-SQL, PL/SQL</li>
-            <li>DevOps & Cloud: Docker, Kubernetes, Terraform, Ansible</li>
+        <ul class="bullet-list">
+            <li>Data Integration Tools: Debezium, Kafka</li>
+            <li>Databases: MSSQL Server, MySQL, Oracle, PostgreSQL, Vertica, Greenplum</li>
+            <li>Programming Languages: Python (data processing and pipeline orchestration), bash</li>
+            <li>Containerization & Orchestration: Docker, Kubernetes</li>
+            <li>CI/CD: GitAction, Ansible, Terraform, Pulumi</li>
+            <li>Monitoring & Logging: Prometheus, Grafana, Graylog</li>
+            <li>Data Architecture: Event-driven architecture, Microservices, Real-time processing pipelines</li>
         </ul>
     </section>
 </body>
