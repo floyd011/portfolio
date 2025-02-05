@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .text-section {
+            text-align: justify;
+            margin: 20px;
+        }
+        .bullet-list {
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,12 +30,33 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Key Projects</h2>
-        <ul>
-            <li><strong>Real-Time Analytics Platform:</strong> Kafka, Debezium, Greenplum</li>
-            <li><strong>Microservices-Based Data Pipeline:</strong> Docker, Kubernetes, Python</li>
+    <section class="text-section">
+        <h2>Project Highlights</h2>
+        
+        <h3>Real-Time Analytics Platform</h3>
+        <ul class="bullet-list">
+            <li><strong>Objective:</strong> Built a platform to process and analyze real-time data for business intelligence.</li>
+            <li><strong>Technologies Used:</strong> Debezium, Kafka, Python, Greenplum, Docker, Kubernetes, Graylog, Prometheus, Grafana.</li>
+            <li><strong>Highlights:</strong></li>
+            <ul class="bullet-list">
+                <li>Achieved sub-second latency for capturing and processing database changes.</li>
+                <li>Designed scalable microservices to handle millions of daily events.</li>
+                <li>Created Grafana dashboards to monitor system performance and key metrics.</li>
+            </ul>
+        </ul>
+
+        <h3>Microservices-Based Data Pipeline</h3>
+        <ul class="bullet-list">
+            <li><strong>Objective:</strong> Developed a microservices architecture for streaming and processing large datasets from multiple relational databases.</li>
+            <li><strong>Technologies Used:</strong> Debezium, Kafka, Python, Docker, Kubernetes.</li>
+            <li><strong>Highlights:</strong></li>
+            <ul class="bullet-list">
+                <li>Automated deployment and scaling using Kubernetes.</li>
+                <li>Reduced operational overhead by centralizing logs in Graylog containers.</li>
+                <li>Enhanced fault tolerance with Kafka partitioning and replication.</li>
+            </ul>
         </ul>
     </section>
+
 </body>
 </html>
