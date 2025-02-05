@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .text-section {
+            text-align: justify;
+            margin: 20px;
+        }
+        .bullet-list {
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,12 +30,43 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Work Experience</h2>
-        <ul>
-            <li><strong>Data Engineer | Python Developer</strong> (2018 - Present)</li>
-            <li><strong>Big Data Developer | DBA</strong> (2014 - 2018)</li>
-            <li><strong>Database Developer | DWH Architect</strong> (2004 - 2014)</li>
+    <section class="text-section">
+        <h2>Professional Experience</h2>
+        <h3>1. Database Change Data Capture (CDC) with Debezium</h3>
+        <ul class="bullet-list">
+            <li>Implemented CDC pipelines using Debezium to capture real-time changes from relational databases, including MSSQL Server, MySQL, Oracle, and PostgreSQL.</li>
+            <li>Configured Debezium connectors to ensure minimal latency and high reliability in data streaming.</li>
+        </ul>
+
+        <h3>2. Data Streaming with Kafka</h3>
+        <ul class="bullet-list">
+            <li>Designed and managed Kafka topics for handling high-throughput, real-time data ingestion.</li>
+            <li>Ensured data consistency and fault tolerance through robust Kafka configurations.</li>
+        </ul>
+
+        <h3>3. Data Processing and Loading</h3>
+        <ul class="bullet-list">
+            <li>Built Python-based consumers to process Kafka streams and load processed data into the Greenplum analytical database.</li>
+            <li>Implemented transformation and enrichment logic to make data analytics-ready.</li>
+        </ul>
+
+        <h3>4. Microservices Architecture</h3>
+        <ul class="bullet-list">
+            <li>Developed modular and scalable microservices for data ingestion, transformation, and delivery.</li>
+            <li>Deployed services in a containerized environment using Docker.</li>
+            <li>Orchestrated containerized workflows using Kubernetes to ensure high availability and scalability.</li>
+        </ul>
+
+        <h3>5. Logging and Monitoring</h3>
+        <ul class="bullet-list">
+            <li>Centralized logging through Logstash containers, enabling real-time tracking and debugging of application logs.</li>
+            <li>Monitored system health and performance metrics using Prometheus and visualized them on Grafana dashboards.</li>
+        </ul>
+
+        <h3>6. Data Analytics Pipeline</h3>
+        <ul class="bullet-list">
+            <li>Designed and optimized end-to-end pipelines to handle high-volume, real-time analytics workloads.</li>
+            <li>Ensured seamless integration between source systems, streaming platforms, and the Greenplum analytical database.</li>
         </ul>
     </section>
 </body>
